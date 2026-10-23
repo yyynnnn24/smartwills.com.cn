@@ -2657,7 +2657,7 @@ body.policy-drawer-open {
 
 .partnership-programs__tabs {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   width: min(100%, 1400px);
   min-height: 50px;
   margin-inline: auto;
@@ -3792,19 +3792,28 @@ body.partnership-drawer-open {
 }
 
 .about-accolades__inner {
-  display: grid;
+  /* display: grid;
   grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
   align-items: center;
-  gap: clamp(72px, 8vw, 148px);
+  gap: clamp(72px, 8vw, 148px); */
+  display: grid;
+  justify-items: center;
+  text-align: center;
 }
 
 .about-accolades__copy h2 {
-  max-width: 550px;
+  /* max-width: 550px;
   margin: 0 auto;
   color: var(--brand-red);
   font-size: 48px;
   font-weight: 600;
   line-height: 1.1;
+  letter-spacing: 0; */
+  margin: 0;
+  color: var(--brand-red);
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
   letter-spacing: 0;
 }
 
@@ -3817,33 +3826,41 @@ body.partnership-drawer-open {
 }
 
 .about-accolades__copy p {
-  max-width: 455px;
+  width: min(100%, 1000px);
+  max-width: 1000px;
+  font-size: 14px;
+  /* max-width: 1000px;
+  width: min(100%, 1000px);
   margin: 28px auto 0;
   color: #000000;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.24;
+  line-height: 1.24; */
 }
-
+/* 
 .about-accolades__logos {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: center;
+  justify-items: center;
   gap: 92px 64px;
-}
+  text-align: center;
+} */
 
 .about-accolades__logo {
-  display: grid;
-  place-items: center;
-  min-width: 0;
-  min-height: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(44px, 8vw, 120px);
+  width: min(100%, 760px);
+  margin-top: 38px;
+  /* min-height: 116px;
   padding: 0;
   background: transparent;
   cursor: pointer;
   opacity: 0.24;
   transition:
     opacity 180ms ease,
-    transform 180ms ease;
+    transform 180ms ease; */
 }
 
 .about-accolades__logo:hover,
@@ -3858,8 +3875,8 @@ body.partnership-drawer-open {
 
 .about-accolades__logo img {
   display: block;
-  width: min(100%, 170px);
-  max-height: 116px;
+  width: min(100%, 260px);
+  height: 96px;
   object-fit: contain;
 }
 

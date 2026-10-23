@@ -9,10 +9,10 @@
   const nationalityButtons = Array.from(document.querySelectorAll("[data-nationality]"));
 
   const planData = {
-    malaysian: {
+    chinese: {
       title: "SmartWills Plan",
-      intro: "Designed for Malaysian individuals who want a simple and structured way to prepare their Will, appoint beneficiaries, executors and guardians, and make their wishes clear for the future.",
-      note: "The Will maker, Executor(s), Guardian(s), Witness(es) and Beneficiary(ies) are Malaysian.\n[Malaysia NRIC (i.e. ID number) must be used to identify the particulars of these individuals.]",
+      intro: "Designed for Chinese nationals who want a simple and structured way to prepare their Will, appoint beneficiaries, executors and guardians, and make their wishes clear for the future.",
+      note: "The Will maker, Executor(s), Guardian(s), Witness(es) and Beneficiary(ies) are Chinese nationals.\n[China ID number must be used to identify the particulars of these individuals.]",
       names: ["SmartWills Basic", "SmartWills Advanced"],
       prices: ["RM 388", "RM 788"],
       summaries: ["A straightforward Will plan with lump-sum distribution for simple and clear estate planning.", "A more detailed Will plan with itemised asset distribution for greater control and flexibility."],
@@ -23,14 +23,14 @@
       plus: false,
       package: false
     },
-    "non-malaysian": {
+    "non-chinese": {
       title: "SmartWills Plus",
-      intro: "Designed for cases involving non-Malaysian individuals, offering a more suitable Will-planning option when the Will maker or related parties include non-Malaysian citizens.",
-      note: "If any among the Will maker, Executor(s), Guardian(s), Witness(es), or Beneficiary(ies) is a non-Malaysian citizen,\n[International Passport Numbers and relevant country ID Number must be used to identify the particulars of these individuals.]",
+      intro: "Designed for cases involving non-Chinese nationals, offering a more suitable Will-planning option when the Will maker or related parties include non-Chinese citizens.",
+      note: "If any among the Will maker, Executor(s), Guardian(s), Witness(es), or Beneficiary(ies) is a non-Chinese citizen,\n[International Passport Numbers and relevant country ID Number must be used to identify the particulars of these individuals.]",
       names: ["SmartWills Basic+", "SmartWills Advanced+"],
       prices: ["RM 489", "RM 889"],
-      summaries: ["A straightforward Will plan involving non-Malaysians, with simple lump-sum asset distribution.", "A comprehensive Will plan involving non-Malaysians, with detailed and itemised asset distribution."],
-      best: ["Non-Malaysian individuals or families who need a simple Will with straightforward lump-sum distribution and clear beneficiary arrangements.", "Non-Malaysian individuals or families who need more detailed estate planning, with itemised asset distribution and greater flexibility for complex arrangements."],
+      summaries: ["A straightforward Will plan involving non-Chinese individuals, with simple lump-sum asset distribution.", "A comprehensive Will plan involving non-Chinese individuals, with detailed and itemised asset distribution."],
+      best: ["Non-Chinese individuals or families who need a simple Will with straightforward lump-sum distribution and clear beneficiary arrangements.", "Non-Chinese individuals or families who need more detailed estate planning, with itemised asset distribution and greater flexibility for complex arrangements."],
       buttonLabels: ["Start Your Plan Now", "Start Your Plan Now"],
       buttonLinks: ["https://app.mysmartwills.com/?item_id=9", "https://app.mysmartwills.com/?item_id=11"],
       features: [[], []],
