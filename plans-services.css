@@ -1,0 +1,856 @@
+.plans-services-page {
+  color: #111111;
+  background: #ffffff;
+}
+
+.plans-services-page .site-header__nav-toggle[aria-current="page"] {
+  color: #ffbf00;
+}
+
+.plans-services-page main p {
+  font-size: 14px;
+}
+
+.ps-hero {
+  display: grid;
+  min-height: 520px;
+  place-items: center;
+  padding: 92px 0 84px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.ps-hero .site-container {
+  width: min(100%, 1500px);
+}
+
+.ps-hero h1 {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(48px, 4.75vw, 82px);
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -0.045em;
+}
+
+.ps-hero h1 span {
+  color: #c40021;
+}
+
+.ps-hero__copy {
+  max-width: 1340px;
+  margin: 34px auto 0;
+  color: #202020;
+  line-height: 1.65;
+}
+
+.ps-explorer {
+  padding: 74px 0 112px;
+  background: #ffffff;
+}
+
+.ps-explorer > .site-container {
+  width: min(100%, 1480px);
+}
+
+.ps-view-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 70px;
+}
+
+.ps-view-switch button {
+  padding: 0;
+  background: transparent;
+  color: #9a9a9a;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ps-view-switch button.is-active {
+  color: #111111;
+  font-weight: 700;
+}
+
+.ps-view-switch .ps-switch-track {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 21px;
+  min-height: 21px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #f0efec;
+  cursor: pointer;
+}
+
+.ps-view-switch .ps-switch-track::before {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--brand-red);
+  content: "";
+  transform: translateY(-50%);
+  transition: left 180ms ease;
+}
+
+.ps-view-switch[data-active="services"] .ps-switch-track::before {
+  left: 18px;
+}
+
+.ps-view-panel[hidden],
+.ps-service-panel[hidden] {
+  display: none;
+}
+
+.ps-plan-heading {
+  margin-bottom: 52px;
+  padding-inline: 12px;
+}
+
+.ps-plan-heading h2,
+.ps-service-copy h2,
+.ps-service-section > h2 {
+  margin: 0;
+  color: #bd2026;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.ps-plan-heading > div:first-child > p {
+  max-width: 700px;
+  margin: 22px 0 0;
+  color: #181818;
+  line-height: 1.45;
+}
+
+.ps-plan-heading > div:first-child > .ps-plan-note {
+  color: #aeb4bf;
+  font-style: italic;
+}
+
+.ps-price-card.is-package .ps-feature-grid {
+  display: none;
+}
+
+.ps-price-card.is-package .ps-best {
+  margin-top: auto;
+}
+
+.ps-pricing-shell.is-packages {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ps-pricing-shell.is-packages .ps-price-card {
+  min-height: 590px;
+  padding: 42px 34px 38px;
+}
+
+.ps-pricing-shell.is-packages .ps-price-card h3 {
+  display: flex;
+  align-items: flex-start;
+  min-height: 82px;
+  font-size: clamp(28px, 1.8vw, 36px);
+}
+
+.ps-pricing-shell.is-packages .ps-price-card__summary {
+  min-height: 62px;
+}
+
+.ps-pricing-shell.is-packages .ps-price-card--featured {
+  background: linear-gradient(#ad0019, #ad0019) padding-box, linear-gradient(90deg, #ff0017, #ff3a13 55%, #ffb900) border-box;
+  color: #ffffff;
+}
+
+.ps-pricing-shell.is-packages .ps-price-card--featured h3 {
+  color: #ffbd00;
+}
+
+.ps-handbook-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 38px;
+  margin-top: 58px;
+  padding: 43px 51px;
+  border-radius: 15px;
+  background: #f7f8fa;
+}
+
+.ps-handbook-callout h2 {
+  margin: 0;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.ps-handbook-callout p {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: #6f737b;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.ps-handbook-callout__actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 14px;
+}
+
+.ps-handbook-callout .ps-primary-button,
+.ps-handbook-callout .ps-secondary-button {
+  min-width: 139px;
+  min-height: 51px;
+  padding: 0 30px;
+  font-size: 16px;
+}
+
+.ps-pricing-shell.is-packages .ps-price-card--featured .ps-price {
+  color: #ffffff;
+}
+
+.ps-pricing-shell.is-packages .ps-price {
+  margin-top: 24px;
+}
+
+.ps-price-card.is-package .ps-primary-button {
+  background: linear-gradient(90deg, #c60022 0%, #ff0809 62%, #ffbd00 100%);
+}
+
+.ps-package-features {
+  display: grid;
+  gap: 14px;
+  margin: 34px 0 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.ps-package-features[hidden] {
+  display: none;
+}
+
+.ps-package-features li {
+  position: relative;
+  padding-left: 27px;
+  line-height: 1.45;
+}
+
+.ps-package-features li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #49c800;
+  content: "✓";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.ps-pricing-shell {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 28px;
+  border-radius: 18px;
+  background: #f7f7f7;
+}
+
+.ps-price-card {
+  display: flex;
+  min-height: 650px;
+  flex-direction: column;
+  padding: 54px 50px 48px;
+  border: 2px solid transparent;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.ps-price-card[hidden] {
+  display: none;
+}
+
+.ps-price-card--featured {
+  border-color: transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #d00022, #ff1512 52%, #ffba00) border-box;
+}
+
+.ps-price-card.is-plus {
+  border-color: transparent;
+  background: #ad0019;
+  color: #ffffff;
+}
+
+.ps-price-card.is-plus.ps-price-card--featured {
+  background: linear-gradient(#ad0019, #ad0019) padding-box, linear-gradient(90deg, #ff0017, #ff3a13 55%, #ffb900) border-box;
+}
+
+.ps-price-card h3 {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(30px, 2.1vw, 42px);
+  line-height: 1.15;
+}
+
+.ps-price-card--package-third .ps-price-card__plan-label {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(22px, 1.5vw, 30px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.ps-pricing-shell.is-packages .ps-price-card--package-third h3 {
+  min-height: 0;
+}
+
+.ps-pricing-shell.is-packages .ps-price-card--package-third .ps-price-card__summary {
+  margin-top: 38px;
+}
+
+.ps-price-card.is-plus h3 {
+  color: #ffbd00;
+}
+
+.ps-price-card__summary {
+  min-height: 48px;
+  margin: 16px 0 0;
+  line-height: 1.45;
+}
+
+.ps-price {
+  margin: 28px 0 22px;
+  color: #c50021;
+  font-size: clamp(42px, 3.1vw, 64px) !important;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.ps-price-card.is-plus .ps-price {
+  color: #ffffff;
+}
+
+.ps-primary-button,
+.ps-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 30px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.ps-primary-button {
+  background: #e50008;
+}
+
+.ps-primary-button--gradient {
+  background: linear-gradient(90deg, #c60022 0%, #ff0809 62%, #ffbd00 100%);
+}
+
+.ps-secondary-button {
+  min-width: 150px;
+  background: #c7c8ca;
+}
+
+.ps-primary-button:hover,
+.ps-primary-button:focus-visible,
+.ps-secondary-button:hover,
+.ps-secondary-button:focus-visible {
+  filter: brightness(1.05);
+  transform: translateY(-2px);
+}
+
+.ps-primary-button:active,
+.ps-secondary-button:active {
+  transform: translateY(0);
+}
+
+.ps-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px 52px;
+  margin-top: 40px;
+}
+
+.ps-feature-grid strong,
+.ps-best strong {
+  display: block;
+  font-size: 14px;
+}
+
+.ps-feature-grid p {
+  position: relative;
+  margin: 5px 0 0;
+  padding-left: 25px;
+  line-height: 1.4;
+}
+
+.ps-feature-grid p::before {
+  position: absolute;
+  left: 0;
+  color: #49c800;
+  content: "✓";
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.ps-feature-grid small {
+  display: block;
+  margin-left: 25px;
+  color: #e40013;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ps-price-card.is-plus .ps-feature-grid small {
+  color: #ffbd00;
+}
+
+.ps-best {
+  margin-top: auto;
+  padding-top: 38px;
+}
+
+.ps-best p {
+  margin: 5px 0 0;
+  line-height: 1.45;
+}
+
+.ps-plan-tabs,
+.ps-service-tabs {
+  display: grid;
+  gap: 2px;
+  margin-bottom: 68px;
+  padding: 5px;
+  border-radius: 999px;
+  background: #f5f5f5;
+}
+
+.ps-plan-tabs {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ps-service-tabs {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.ps-plan-tabs button,
+.ps-service-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 46px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: transparent;
+  color: #111111;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ps-plan-tabs button.is-active,
+.ps-service-tabs button.is-active {
+  background: #c30025;
+  color: #ffffff;
+}
+
+.ps-plan-tabs img,
+.ps-service-tabs img {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.28;
+}
+
+.ps-plan-tabs button.is-active img,
+.ps-service-tabs button.is-active img {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+.ps-service-panel {
+  scroll-margin-top: 110px;
+}
+
+.ps-service-hero {
+  display: grid;
+  gap: 64px;
+  align-items: center;
+}
+
+.ps-service-hero--split {
+  grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.8fr);
+}
+
+.ps-service-hero--image-first {
+  grid-template-columns: 1fr;
+}
+
+.ps-service-hero > img {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.ps-service-hero--split > img {
+  min-height: 340px;
+  aspect-ratio: 4 / 3;
+}
+
+.ps-service-hero--image-first > img {
+  max-height: 440px;
+  aspect-ratio: 3.2 / 1;
+  object-position: center;
+}
+
+.ps-service-copy h3,
+.ps-service-section > h3 {
+  margin: 22px 0 0;
+  color: #111111;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.ps-service-copy p,
+.ps-service-section > p {
+  margin: 22px 0 0;
+  line-height: 1.55;
+}
+
+.ps-important strong {
+  color: #c02026;
+  font-style: italic;
+}
+
+.ps-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 38px;
+}
+
+.ps-service-section {
+  position: relative;
+  margin-top: 78px;
+  padding-top: 72px;
+}
+
+.ps-service-section::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(44%, 480px);
+  height: 1px;
+  background: #dedede;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.ps-icon-grid,
+.ps-process-grid,
+.ps-document-grid,
+.ps-step-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.ps-icon-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 38px 70px;
+}
+
+.ps-icon-grid article,
+.ps-process-grid article {
+  min-width: 0;
+}
+
+.ps-icon-grid img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.28;
+}
+
+.ps-icon-grid--warnings img {
+  filter: none;
+  opacity: 1;
+}
+
+.ps-icon-grid--two article {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  column-gap: 18px;
+}
+
+.ps-icon-grid--two article img {
+  grid-row: 1 / span 2;
+}
+
+.ps-icon-grid h4,
+.ps-process-grid h4,
+.ps-document-grid h4,
+.ps-step-cards h4,
+.ps-pill-grid h4 {
+  margin: 18px 0 0;
+  color: #c22228;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.ps-icon-grid--two h4 {
+  margin-top: 0;
+}
+
+.ps-icon-grid p,
+.ps-process-grid p,
+.ps-document-grid p,
+.ps-step-cards p,
+.ps-pill-grid p {
+  margin: 7px 0 0;
+  line-height: 1.4;
+}
+
+.ps-process-grid {
+  text-align: center;
+}
+
+.ps-process-grid img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.ps-process-grid h4 {
+  margin-top: 16px;
+}
+
+.ps-process-grid strong,
+.ps-step-cards strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.ps-document-grid {
+  gap: 14px;
+}
+
+.ps-document-grid article {
+  min-height: 240px;
+  padding: 40px 28px 30px;
+  border-radius: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.ps-document-grid img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.ps-document-grid h4 {
+  color: #ffffff;
+}
+
+.ps-gradient-1 { background: linear-gradient(120deg, #b4001c, #d7271b); }
+.ps-gradient-2 { background: linear-gradient(120deg, #d7271b, #ff541a); }
+.ps-gradient-3 { background: linear-gradient(120deg, #ff541a, #ff8b0c); }
+.ps-gradient-4 { background: linear-gradient(120deg, #ff8b0c, #ffbb00); }
+
+.ps-step-cards {
+  gap: 14px;
+}
+
+.ps-step-cards article {
+  min-height: 250px;
+  padding: 30px 24px;
+  border-radius: 15px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.ps-step-cards span {
+  color: #c8c8c8;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.ps-pill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 42px;
+}
+
+.ps-pill-grid article {
+  min-height: 94px;
+  padding: 20px 30px;
+  border-radius: 999px;
+  background: #bd0023;
+  color: #ffffff;
+  text-align: center;
+}
+
+.ps-pill-grid h4 {
+  margin: 0;
+  color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+  .ps-price-card { padding: 42px 32px; }
+  .ps-feature-grid { gap: 28px 22px; }
+  .ps-service-hero--split { grid-template-columns: 1fr 0.8fr; gap: 38px; }
+  .ps-pricing-shell.is-packages { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ps-plan-tabs,
+  .ps-service-tabs { overflow-x: auto; border-radius: 16px; scrollbar-width: none; }
+  .ps-plan-tabs button,
+  .ps-service-tabs button { min-width: 175px; }
+  .ps-plan-tabs::-webkit-scrollbar,
+  .ps-service-tabs::-webkit-scrollbar { display: none; }
+}
+
+@media (max-width: 820px) {
+  .ps-hero { min-height: 430px; padding: 74px 0 70px; }
+  .ps-hero h1 { font-size: 50px; }
+  .ps-explorer { padding-top: 60px; }
+  .ps-pricing-shell { grid-template-columns: 1fr; }
+  .ps-pricing-shell.is-packages { grid-template-columns: 1fr; }
+  .ps-price-card { min-height: 0; }
+  .ps-service-hero--split { grid-template-columns: 1fr; }
+  .ps-service-hero--split > img { grid-row: 1; }
+  .ps-icon-grid,
+  .ps-process-grid,
+  .ps-document-grid,
+  .ps-step-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ps-service-hero--image-first > img { aspect-ratio: 2 / 1; }
+}
+
+@media (max-width: 520px) {
+  .ps-hero { min-height: 390px; padding: 68px 0 58px; }
+  .ps-hero .site-container,
+  .ps-explorer > .site-container { padding-inline: 22px; }
+  .ps-hero h1 { font-size: 40px; line-height: 1.12; }
+  .ps-hero__copy { margin-top: 24px; line-height: 1.55; }
+  .ps-explorer { padding: 52px 0 82px; }
+  .ps-view-switch { margin-bottom: 52px; }
+  .ps-plan-heading { margin-bottom: 36px; padding: 0; }
+  .ps-plan-heading h2,
+  .ps-service-copy h2,
+  .ps-service-section > h2 { font-size: 40px; line-height: 1.1; }
+  .ps-pricing-shell { margin-inline: -10px; padding: 10px; border-radius: 15px; }
+  .ps-price-card { padding: 32px 22px; border-radius: 15px; }
+  .ps-price-card h3 { font-size: 29px; }
+  .ps-price-card__summary { min-height: 0; }
+  .ps-pricing-shell.is-packages .ps-price-card h3,
+  .ps-pricing-shell.is-packages .ps-price-card__summary { min-height: 0; }
+  .ps-pricing-shell.is-packages .ps-price-card--package-third .ps-price-card__summary { margin-top: 16px; }
+  .ps-feature-grid { grid-template-columns: 1fr; gap: 24px; }
+  .ps-best { padding-top: 34px; }
+  .ps-handbook-callout {
+    display: grid;
+    gap: 22px;
+    margin-top: 35px;
+    padding: 26px 19px;
+  }
+  .ps-handbook-callout h2 { font-size: 18px; }
+  .ps-handbook-callout p { margin-top: 11px; font-size: 14px; line-height: 1.5; }
+  .ps-handbook-callout__actions { display: grid; gap: 12px; }
+  .ps-handbook-callout .ps-primary-button,
+  .ps-handbook-callout .ps-secondary-button { width: 100%; min-height: 38px; font-size: 14px; }
+  .ps-plan-tabs,
+  .ps-service-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+    min-height: 44px;
+    margin: 0 0 42px;
+    padding: 0 34px 0 0;
+    border-radius: 0;
+    background: transparent;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 calc(100% - 42px), transparent 100%);
+    mask-image: linear-gradient(90deg, #000 0%, #000 calc(100% - 42px), transparent 100%);
+  }
+  .ps-plan-tabs::-webkit-scrollbar,
+  .ps-service-tabs::-webkit-scrollbar { display: none; }
+  .ps-plan-tabs button,
+  .ps-service-tabs button {
+    flex: 0 0 auto;
+    min-width: 0;
+    min-height: 42px;
+    padding: 0 18px;
+    gap: 5px;
+    background: #f3f3f3;
+    font-size: 12px;
+  }
+  .ps-plan-tabs img,
+  .ps-service-tabs img { width: 15px; height: 15px; }
+  .ps-service-hero { gap: 30px; }
+  .ps-service-hero--split > img,
+  .ps-service-hero--image-first > img { min-height: 240px; aspect-ratio: 1.35 / 1; border-radius: 14px; }
+  .ps-service-copy h3,
+  .ps-service-section > h3 { margin-top: 16px; font-size: 18px; }
+  .ps-service-copy p,
+  .ps-service-section > p { margin-top: 18px; line-height: 1.55; }
+  .ps-actions { display: grid; grid-template-columns: 1fr; margin-top: 30px; }
+  .ps-primary-button,
+  .ps-secondary-button { width: 100%; min-height: 50px; }
+  .ps-service-section { margin-top: 58px; padding-top: 56px; }
+  .ps-service-section::before { width: 70%; }
+  .ps-icon-grid,
+  .ps-icon-grid--two,
+  .ps-process-grid,
+  .ps-document-grid,
+  .ps-step-cards,
+  .ps-pill-grid { grid-template-columns: 1fr; gap: 28px; margin-top: 38px; }
+  .ps-icon-grid--two article { grid-template-columns: 46px 1fr; }
+  .ps-process-grid { gap: 42px; }
+  .ps-document-grid { gap: 12px; }
+  .ps-document-grid article { min-height: 220px; }
+  .ps-step-cards { gap: 12px; }
+  .ps-step-cards article { min-height: 0; }
+  .ps-pill-grid { gap: 10px; }
+  .ps-pill-grid article { border-radius: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ps-view-switch .ps-switch-track::before,
+  .ps-primary-button,
+  .ps-secondary-button { transition: none; }
+}

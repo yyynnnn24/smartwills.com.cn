@@ -1,0 +1,11 @@
+{
+  "name": "smartwills-malaysia-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static marketing website for SmartWills Malaysia.",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "license": "UNLICENSED"
+}
