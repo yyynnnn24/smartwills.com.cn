@@ -1,36 +1,49 @@
 PRODUCT DISCLOSURE SHEET / 产品披露说明
 
+
 Below is the Product Disclosure Sheet of our Online Will Template Service. Please read carefully and if necessary consult independent legal advice prior to use.
+
 以下为我方线上遗嘱模板服务产品披露说明。请您在使用前仔细阅读，必要时向独立执业律师咨询法律意见。
+
 
 Product Disclosure Sheet of SmartWills Online Will Template Service
 SmartWills线上遗嘱模板服务产品披露说明
 
+
 Customers are advised to read this Product Disclosure Sheet (“PDS”) before using the Online Will Template Service (“Service”). Please also read our Terms & Conditions.
+
 建议您在使用线上遗嘱模板服务（下称“本服务”）前阅读本产品披露说明（下称“PDS”），同时请阅读我方《条款与条件》。
+
 
 1. Who is offering this Service?
 1. 服务提供方
 
 The Online Will Template Service (“Service”) is provided by [Fill in your Chinese Company Name].
+
 本线上遗嘱模板服务由【填写您的中国公司主体名称】提供。
+
 
 2. What is this Service about?
 2. 本服务内容
 
 You may generate a will template by accessing our Website and completing the online questionnaire. After submission and payment, you will receive the downloadable template document. You shall arrange signing, witnessing and execution in compliance with the Civil Code of the People’s Republic of China on your own.
+
 您可登录我方网站，填写线上问卷生成遗嘱模板。提交信息并完成付费后，您将获得可下载的模板文件。您需要自行按照《中华人民共和国民法典》要求完成签署、见证及落地订立流程。
+
 
 3. What is a Will?
 3. 什么是遗嘱
 
 A Will is a written expression of your true intention to dispose of your personal lawful property upon your death, made in the statutory form required by the Civil Code of the People’s Republic of China. A valid will allows you to arrange the distribution of your personal assets instead of default statutory succession.
+
 遗嘱是自然人按照《中华人民共和国民法典》规定的法定形式，作出的在其死亡后处分个人合法财产的真实意思表示。有效的遗嘱可以优先于法定继承安排您的个人财产分配。
+
 
 4. Who is eligible to make a Will?
 4. 谁可以订立遗嘱
 
 Any natural person who meets all the following requirements may make a will:
+
 符合以下全部条件的自然人可以订立遗嘱：
 
 • Has full capacity for civil conduct and sound mind;
@@ -42,11 +55,14 @@ Any natural person who meets all the following requirements may make a will:
 • Able to understand the nature and legal consequence of making a will.
 • 能够理解订立遗嘱的性质与法律后果。
 
+
 5. What are the fees and charges that I have to pay for the Service?
 5. 服务费用
 
 A one-time fee as displayed on our Website, depending on the package you select, is payable for each will template. All fees quoted are exclusive of any tax, which will be charged separately where applicable.
+
 每份遗嘱模板收取一次性服务费，金额以网站展示、您所选套餐为准。报价不含税费，如产生税费将另行收取。
+
 
 6. What are my duties?
 6. 您的义务
@@ -63,17 +79,22 @@ A one-time fee as displayed on our Website, depending on the package you select,
 6.4 If you have any doubts about the will, you are recommended to seek independent legal advice from a qualified lawyer.
 6.4 如您对遗嘱内容存在疑问，建议向执业律师寻求独立法律意见。
 
+
 7. What happens if I fail to fulfill my duties?
 7. 未履行义务的后果
 
 We may not be able to complete template generation. Your will may be invalid or partially invalid under the Civil Code if formal requirements are not satisfied.
+
 我方可能无法为您生成模板；如您未满足法定形式要件，您的遗嘱可能被认定全部或部分无效。
+
 
 8. What are the major risks of using this Service?
 8. 使用本服务的主要风险
 
 General risks of online service transactions apply. The template we provide is only a drafting reference. A template alone does NOT equal a valid will. Your will may be invalid if you fail to complete statutory signing and witnessing procedures.
+
 线上服务通用交易风险均适用。我方仅提供模板起草参考，模板本身不等于有效遗嘱。若您未完成法定签署、见证流程，遗嘱将存在无效风险。
+
 
 9. What are the inherent legal risks in making a will?
 9. 订立遗嘱本身固有的法律风险
@@ -86,6 +107,7 @@ General risks of online service transactions apply. The template we provide is o
 
 9.3 Statutory reserved portions for persons without labour capacity and without source of income must be reserved, otherwise the relevant part of the will may be invalid.
 9.3 遗嘱应当为缺乏劳动能力又没有生活来源的继承人保留必要的遗产份额，否则对应部分可能无效。
+
 
 10. How do I subscribe to the Service?
 10. 服务订购流程
@@ -108,68 +130,89 @@ General risks of online service transactions apply. The template we provide is o
 10.6 Select “Continue” and follow the prompts to complete submission and payment.
 10.6 选择继续，按照页面指引完成信息提交及付费。
 
+
 11. Who can be my Will Executor?
 11. 谁可以担任遗嘱执行人
 
 A will executor must be a natural person with full capacity for civil conduct, who agrees to accept the appointment and is capable of administering your estate. Legal persons or professional institutions may also act as the executor.
+
 遗嘱执行人应当是具备完全民事行为能力、同意接受委任、具备遗产管理能力的自然人；法人、专业机构也可担任遗嘱执行人。
+
 
 12. How many Executor(s) do I need?
 12. 需要几名遗嘱执行人
 
 You may appoint one or multiple executors. It is recommended to appoint at least one alternate executor.
+
 您可以指定一名或多名遗嘱执行人，建议同步指定候补执行人。
+
 
 13. Who can be my witness?
 13. 谁可以担任见证人（适用于打印遗嘱 / 代书遗嘱）
 
 Witnesses must be natural persons with full capacity for civil conduct. Beneficiaries, heirs, creditors, debtors and other interested parties may NOT act as witnesses. At least two witnesses are required for print wills and attested wills under the Civil Code.
+
 见证人必须是具备完全民事行为能力的自然人；受益人、继承人、债权人、债务人及其他利害关系人不得担任见证人。依据民法典，打印遗嘱、代书遗嘱需要至少两名见证人。
+
 
 14. How does the Will provide for distribution of assets?
 14. 资产分配方式
 
 The template supports distribution by percentage (%) or specific designated property.
+
 模板支持按百分比分配，也支持指定单项财产分配。
+
 
 15. What is meant by “Last Will & Testament”?
 15. “最后一份遗嘱”含义
 
 A valid will automatically revokes any prior will made by you. The latest valid will shall prevail unless it is lawfully revoked.
+
 一份合法有效的遗嘱自动撤销您之前订立的遗嘱；以时间在后、符合法定要件的有效遗嘱为准，除非该遗嘱被依法撤销。
+
 
 16. Can I revise or remake my Will? How much does it cost?
 16. 是否可以修改、重新订立遗嘱？费用如何
 
 You may revise or remake your will at any time. To update your will, you need to create a new will template and complete a new statutory execution procedure. The service fee will apply for each new template order.
+
 您随时可以修改、重新订立遗嘱。如需变更受益人或分配方案，需要重新生成新遗嘱模板并重新完成法定订立流程；每一次新模板订单均需要支付对应服务费。
+
 
 17. Can I cancel my subscription?
 17. 是否可以取消订单
 
 You may cancel your order before payment. Once payment is completed, refunds will not be available unless otherwise required by mandatory laws.
+
 您在付费之前可以取消订单；付费完成后，除法律强制规定情形外，不予退款。
+
 
 18. What do I need to do if there are changes to my contact details?
 18. 联系方式变更
 
 You shall promptly update your contact information via our Website or notify us.
+
 您应当及时在网站更新或书面告知我方联系方式变更。
+
 
 19. When can I receive the will template?
 19. 何时收到遗嘱模板
 
 After you submit complete and accurate information and payment is confirmed, we will send the PDF template to your reserved email address within 24 hours.
+
 在您提交完整准确信息、付款核验通过后，我方将在24小时内把PDF模板发送至您预留邮箱。
+
 
 20. Where can I get assistance and further information?
 20. 咨询渠道
 
 For questions about the service or will drafting, please contact us via our website, email or customer service hotline.
+
 如您对本服务、遗嘱起草有疑问，请通过官网、客服邮箱、客服热线联系我们。
 
-[Company Name]
-【公司名称】
+
+SMARTWILLS
+智承遗嘱
 
 Contact Email: enquiry@smartwills.com.cn
 联系邮箱：enquiry@smartwills.com.cn
@@ -177,5 +220,6 @@ Contact Email: enquiry@smartwills.com.cn
 Website: www.smartwills.com.cn
 官网：www.smartwills.com.cn
 
+
 * This Product Disclosure Sheet is subject to revision. The latest version published on our Website shall prevail.
-*本产品披露说明可适时修订，网站公示最新版本为准。
+* 本产品披露说明可适时修订，网站公示最新版本为准。

@@ -273,7 +273,7 @@
             >
               SmartWills Products &amp; Services
             </button>
-            <button
+            <!-- <button
               class="resources-faq-tab"
               type="button"
               role="tab"
@@ -284,7 +284,7 @@
               tabindex="-1"
             >
               Grant of Probate &amp; Letter of Administration
-            </button>
+            </button> -->
           </div>
 
           <div
@@ -454,7 +454,7 @@
             </div>
           </div>
 
-          <div
+          <!-- <div
             class="resources-faq-group"
             id="resourcesPanelProbate"
             role="tabpanel"
@@ -616,7 +616,7 @@
                 <div class="faq-item__answer"><p>No. We offered that separately.</p></div>
               </details>
             </div>
-          </div>
+          </div> -->
 
           <div class="faq-section__cta">
             <div>
@@ -1184,35 +1184,71 @@ Web: www.smartwills.com.my
         };
 
         const isPolicyHeading = (line) => {
-          if (/^\d+(\.\d+)?\s/.test(line)) {
-            return true;
+        if (/^\d+\.\s/.test(line)) {
+          return true;
+        }
+        if (/^[A-Z0-9&\-(), ]+\s*\/\s*.+/.test(line)) {
+          return true;
+        }
+        if (line.length > 90 || /[.!?]$/.test(line)) {
+          return false;
+        }
+        if (/^[A-Z0-9&/\-(), ]+$/.test(line)) {
+          return true;
+        }
+        return false;
+      };
+
+      const renderPolicyText = (text) => {
+        if (!policyContent) return;
+        const fragment = document.createDocumentFragment();
+        
+        const blocks = text.split(/---EN---/);
+        for(const block of blocks){
+          if(!block.trim()) continue;
+          const [headPart, zhPart] = block.split(/---ZH---/);
+          const headLines = headPart.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+          
+          for(let line of headLines){
+            if(isPolicyHeading(line)){
+              const h3 = document.createElement('h3');
+              if (line.includes(' / ')) {
+                const [enPart, zhTitle] = line.split(' / ');
+                const spanEn = document.createElement('span');
+                spanEn.className = 'h3-en';
+                spanEn.textContent = enPart;
+                const spanZh = document.createElement('span');
+                spanZh.className = 'h3-zh';
+                spanZh.textContent = zhTitle;
+                h3.appendChild(spanEn);
+                h3.appendChild(spanZh);
+              }else{
+                h3.textContent = line;
+              }
+              fragment.appendChild(h3);
+            }else{
+              
+              const pEn = document.createElement('p');
+              pEn.className = 'block-en';
+              pEn.textContent = line;
+              fragment.appendChild(pEn);
+            }
           }
-
-          if (line.length > 90 || /[.!?]$/.test(line)) {
-            return false;
+          
+          if(zhPart?.trim()){
+            const zhLines = zhPart.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+            for(let zline of zhLines){
+              const pZh = document.createElement('p');
+              pZh.className = 'block-zh';
+              pZh.textContent = zline;
+              fragment.appendChild(pZh);
+            }
           }
-
-          return /^[A-Z0-9&/\-(), ]+$/.test(line) || /Service$|about\?$|Will\?$|duties\?$|charges/.test(line);
-        };
-
-        const renderPolicyText = (text) => {
-          if (!policyContent) {
-            return;
-          }
-
-          const fragment = document.createDocumentFragment();
-          text
-            .split(/\r?\n/)
-            .map((line) => line.trim())
-            .filter(Boolean)
-            .forEach((line, index) => {
-              fragment.appendChild(createPolicyNode(index === 0 || isPolicyHeading(line) ? "h3" : "p", line));
-            });
-
-          policyContent.innerHTML = "";
-          policyContent.appendChild(fragment);
-          policyContent.scrollTop = 0;
-        };
+        }
+        policyContent.innerHTML = "";
+        policyContent.appendChild(fragment);
+        policyContent.scrollTop = 0;
+      };
 
         document.querySelectorAll("[data-policy-source]").forEach((button) => {
           button.addEventListener("click", async () => {

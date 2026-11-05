@@ -9,12 +9,12 @@
   const nationalityButtons = Array.from(document.querySelectorAll("[data-nationality]"));
 
   const planData = {
-    chinese: {
+    "chinese": {
       title: "SmartWills Plan",
-      intro: "Designed for Chinese nationals who want a simple and structured way to prepare their Will, appoint beneficiaries, executors and guardians, and make their wishes clear for the future.",
-      note: "The Will maker, Executor(s), Guardian(s), Witness(es) and Beneficiary(ies) are Chinese nationals.\n[China ID number must be used to identify the particulars of these individuals.]",
+      intro: "Designed for residents of the Chinese mainland who want a simple and structured way to prepare their Will, appoint beneficiaries, executors and guardians, and make their wishes clear for the future.",
+      note: "The Will maker, Executor(s), Guardian(s), Witness(es) and Beneficiary(ies) are residents of the Chinese mainland.\n[A PRC Resident Identity Card number must be used to identify the particulars of these individuals.]",
       names: ["SmartWills Basic", "SmartWills Advanced"],
-      prices: ["RM 388", "RM 788"],
+      prices: ["CNY 688", "CNY 1,388"],
       summaries: ["A straightforward Will plan with lump-sum distribution for simple and clear estate planning.", "A more detailed Will plan with itemised asset distribution for greater control and flexibility."],
       best: ["A straightforward Will plan with lump-sum distribution for simple and clear estate planning.", "Individuals who want to list specific assets and have greater detail and control over their estate planning."],
       buttonLabels: ["Start Your Plan Now", "Start Your Plan Now"],
@@ -25,12 +25,12 @@
     },
     "non-chinese": {
       title: "SmartWills Plus",
-      intro: "Designed for cases involving non-Chinese nationals, offering a more suitable Will-planning option when the Will maker or related parties include non-Chinese citizens.",
-      note: "If any among the Will maker, Executor(s), Guardian(s), Witness(es), or Beneficiary(ies) is a non-Chinese citizen,\n[International Passport Numbers and relevant country ID Number must be used to identify the particulars of these individuals.]",
+      intro: "Designed for cases involving non-Chinese mainland residents, offering a more suitable Will-planning option when the Will maker or related parties include non-Chinese mainland residents.",
+      note: "If any among the Will maker, Executor(s), Guardian(s), Witness(es), or Beneficiary(ies) is a non-Chinese mainland residents,\n[International Passport Numbers and relevant country ID Number must be used to identify the particulars of these individuals.]",
       names: ["SmartWills Basic+", "SmartWills Advanced+"],
-      prices: ["RM 489", "RM 889"],
-      summaries: ["A straightforward Will plan involving non-Chinese individuals, with simple lump-sum asset distribution.", "A comprehensive Will plan involving non-Chinese individuals, with detailed and itemised asset distribution."],
-      best: ["Non-Chinese individuals or families who need a simple Will with straightforward lump-sum distribution and clear beneficiary arrangements.", "Non-Chinese individuals or families who need more detailed estate planning, with itemised asset distribution and greater flexibility for complex arrangements."],
+      prices: ["CNY 889", "CNY 1,489"],
+      summaries: ["A straightforward Will plan involving non-Chinese mainland residents, with simple lump-sum asset distribution.", "A comprehensive Will plan involving non-Chinese mainland residents, with detailed and itemised asset distribution."],
+      best: ["Non-Chinese mainland residents or families who need a simple Will with straightforward lump-sum distribution and clear beneficiary arrangements.", "Non-Chinese mainland residents or families who need more detailed estate planning, with itemised asset distribution and greater flexibility for complex arrangements."],
       buttonLabels: ["Start Your Plan Now", "Start Your Plan Now"],
       buttonLinks: ["https://app.mysmartwills.com/?item_id=9", "https://app.mysmartwills.com/?item_id=11"],
       features: [[], []],
@@ -41,18 +41,17 @@
       title: "SmartWills Packages",
       intro: "Choose a bundled Will-writing package designed for couples, long-term flexibility, or more comprehensive estate-planning needs.",
       note: "Select the package that fits your needs, or speak with the SmartWills team for personalised guidance.",
-      names: ["Couple Wills", "Lifetime Unlimited Wills", "SmartWills Pro"],
-      prices: ["RM 880", "RM 2,500", "RM 1,380"],
+      names: ["Couple Wills", "Lifetime Unlimited Wills"],
+      prices: ["CNY 1,480", "CNY 4,500"],
       summaries: isChinesePage
-        ? ["遗产规划为两个个体提供完整的遗嘱解决方案,使家庭规划更加清晰,更有组织。", "通过遗嘱与遗嘱信托，为家庭与资产提供更全面的保障", "遗产规划解决方案,结合遗嘱和遗嘱信托,为更全面的家庭和资产保护。"]
-        : ["A complete Will solution for two individuals, making family estate planning clearer and more organised.", "Flexible Will planning for two asset options, offering greater flexibility in protecting and arranging your assets.", "A complete estate planning solution combining a Will and testamentary trust for more comprehensive family and asset protection."],
-      best: ["Couples who want to prepare two Wills together and choose either the Basic or Advanced Will plan.", "Individuals who want the freedom to revise their Will whenever their circumstances change.", "Individuals seeking a comprehensive Will with Testamentary Trust and SmartPlanner guidance."],
-      buttonLabels: ["Buy Now", "Buy Now", "Buy Now"],
-      buttonLinks: ["https://app.mysmartwills.com/event/?id=SMARTWILLSCOUPLE", "https://app.mysmartwills.com/event/?id=SWMYUNLIMITED", "https://app.mysmartwills.com/event/?id=SWMYPROPACKAGE"],
+        ? ["遗产规划为两个个体提供完整的遗嘱解决方案,使家庭规划更加清晰,更有组织。", "通过遗嘱与遗嘱信托，为家庭与资产提供更全面的保障"]
+        : ["A complete Will solution for two individuals, making family estate planning clearer and more organised.", "Flexible Will planning for two asset options, offering greater flexibility in protecting and arranging your assets."],
+      best: ["Couples who want to prepare two Wills together and choose either the Basic or Advanced Will plan.", "Individuals who want the freedom to revise their Will whenever their circumstances change."],
+      buttonLabels: ["Buy Now", "Buy Now"],
+      buttonLinks: ["https://app.mysmartwills.com/event/?id=SMARTWILLSCOUPLE", "https://app.mysmartwills.com/event/?id=SWMYUNLIMITED"],
       features: [
         ["For couples", "2 × Will plans", "Choose Basic or Advanced Will Plan", "Printing included", "One-time payment"],
-        ["Lifetime unlimited Will updates", "Revise your Will as circumstances change", "Printing excluded", "Premium long-term solution"],
-        ["1 × Comprehensive Will with Testamentary Trust", "Printing included", "Served by a certified SmartPlanner"]
+        ["Lifetime unlimited Will updates", "Revise your Will as circumstances change", "Printing excluded", "Premium long-term solution"]
       ],
       plus: false,
       package: true

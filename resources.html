@@ -969,46 +969,72 @@
           return node;
         };
 
-        const isPolicyHeading = (line) => {
-          // 原有：数字编号标题 1. / 1.1
-          if (/^\d+(\.\d+)?\s/.test(line)) {
-            return true;
-          }
-          // 新增：匹配 英文 / 中文 这种标题格式（就是你现在的标题）
-          if (/^[A-Z0-9&\-(), ]+\s*\/\s*.+/.test(line)) {
-            return true;
-          }
-          // 太长、句子结尾标点，直接判定正文
-          if (line.length > 90 || /[.!?]$/.test(line)) {
-            return false;
-          }
-          // 原有：纯大写英文标题
-          if (/^[A-Z0-9&/\-(), ]+$/.test(line)) {
-            return true;
-          }
-          // 原有关键词兜底
-          return /Service$|about\?$|Will\?$|duties\?$|charges|服务$|关于|遗嘱|职责|费用/.test(line);
-        };
+      const isPolicyHeading = (line) => {
+        if (/^\d+\.\s/.test(line)) {
+          return true;
+        }
+        if (/^[A-Z0-9&\-(), ]+\s*\/\s*.+/.test(line)) {
+          return true;
+        }
+        if (line.length > 90 || /[.!?]$/.test(line)) {
+          return false;
+        }
+        if (/^[A-Z0-9&/\-(), ]+$/.test(line)) {
+          return true;
+        }
+        return false;
+      };
 
-
-        const renderPolicyText = (text) => {
-          if (!policyContent) {
-            return;
+      const renderPolicyText = (text) => {
+        if (!policyContent) return;
+        const fragment = document.createDocumentFragment();
+        
+        const blocks = text.split(/---EN---/);
+        for(const block of blocks){
+          if(!block.trim()) continue;
+          const [headPart, zhPart] = block.split(/---ZH---/);
+          const headLines = headPart.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+          
+          for(let line of headLines){
+            if(isPolicyHeading(line)){
+              const h3 = document.createElement('h3');
+              if (line.includes(' / ')) {
+                const [enPart, zhTitle] = line.split(' / ');
+                const spanEn = document.createElement('span');
+                spanEn.className = 'h3-en';
+                spanEn.textContent = enPart;
+                const spanZh = document.createElement('span');
+                spanZh.className = 'h3-zh';
+                spanZh.textContent = zhTitle;
+                h3.appendChild(spanEn);
+                h3.appendChild(spanZh);
+              }else{
+                h3.textContent = line;
+              }
+              fragment.appendChild(h3);
+            }else{
+              
+              const pEn = document.createElement('p');
+              pEn.className = 'block-en';
+              pEn.textContent = line;
+              fragment.appendChild(pEn);
+            }
           }
-
-          const fragment = document.createDocumentFragment();
-          text
-            .split(/\r?\n/)
-            .map((line) => line.trim())
-            .filter(Boolean)
-            .forEach((line, index) => {
-              fragment.appendChild(createPolicyNode(index === 0 || isPolicyHeading(line) ? "h3" : "p", line));
-            });
-
-          policyContent.innerHTML = "";
-          policyContent.appendChild(fragment);
-          policyContent.scrollTop = 0;
-        };
+          
+          if(zhPart?.trim()){
+            const zhLines = zhPart.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+            for(let zline of zhLines){
+              const pZh = document.createElement('p');
+              pZh.className = 'block-zh';
+              pZh.textContent = zline;
+              fragment.appendChild(pZh);
+            }
+          }
+        }
+        policyContent.innerHTML = "";
+        policyContent.appendChild(fragment);
+        policyContent.scrollTop = 0;
+      };
 
         document.querySelectorAll("[data-policy-source]").forEach((button) => {
           button.addEventListener("click", async () => {
