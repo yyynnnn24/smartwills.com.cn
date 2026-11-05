@@ -148,7 +148,7 @@
 }
 
 .ps-pricing-shell.is-packages {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .ps-pricing-shell.is-packages .ps-price-card {
@@ -168,12 +168,15 @@
 }
 
 .ps-pricing-shell.is-packages .ps-price-card--featured {
-  background: linear-gradient(#ad0019, #ad0019) padding-box, linear-gradient(90deg, #ff0017, #ff3a13 55%, #ffb900) border-box;
-  color: #ffffff;
+  background:rgb(255, 253, 253);
+  color: #000000;
+  border-color: transparent;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #d00022, #ff1512 52%, #ffba00) border-box;
+
 }
 
 .ps-pricing-shell.is-packages .ps-price-card--featured h3 {
-  color: #ffbd00;
+  color: #000000;
 }
 
 .ps-handbook-callout {
@@ -219,7 +222,7 @@
 }
 
 .ps-pricing-shell.is-packages .ps-price-card--featured .ps-price {
-  color: #ffffff;
+  color: #c50021;
 }
 
 .ps-pricing-shell.is-packages .ps-price {
