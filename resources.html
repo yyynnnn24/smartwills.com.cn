@@ -1227,16 +1227,26 @@
         };
 
         const isPolicyHeading = (line) => {
+          // 原有：数字编号标题 1. / 1.1
           if (/^\d+(\.\d+)?\s/.test(line)) {
             return true;
           }
-
+          // 新增：匹配 英文 / 中文 这种标题格式（就是你现在的标题）
+          if (/^[A-Z0-9&\-(), ]+\s*\/\s*.+/.test(line)) {
+            return true;
+          }
+          // 太长、句子结尾标点，直接判定正文
           if (line.length > 90 || /[.!?]$/.test(line)) {
             return false;
           }
-
-          return /^[A-Z0-9&/\-(), ]+$/.test(line) || /Service$|about\?$|Will\?$|duties\?$|charges|服务$|关于|遗嘱|职责|费用/.test(line);
+          // 原有：纯大写英文标题
+          if (/^[A-Z0-9&/\-(), ]+$/.test(line)) {
+            return true;
+          }
+          // 原有关键词兜底
+          return /Service$|about\?$|Will\?$|duties\?$|charges|服务$|关于|遗嘱|职责|费用/.test(line);
         };
+
 
         const renderPolicyText = (text) => {
           if (!policyContent) {
