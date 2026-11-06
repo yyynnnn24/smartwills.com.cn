@@ -223,7 +223,7 @@
     }
 
     selectView("plans");
-    selectNationality(planData[target] ? target : "malaysian");
+    selectNationality(planData[target] ? target : "chinese");
   }
 
   applyLocationTarget();
